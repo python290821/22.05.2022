@@ -18,3 +18,8 @@ describe('Test calculator basics with chai', () => {
         expect(expected_result).to.equal(actual_result)
     });
 })
+
+// test min - assert 
+// test div - equal
+
+// npm test
