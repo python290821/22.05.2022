@@ -1,5 +1,5 @@
 
-const calc = require('./calc');
+const calc = require('../calc');
 const assert = require('assert')
 const expect = require('chai').expect
 
