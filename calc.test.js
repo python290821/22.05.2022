@@ -17,9 +17,19 @@ describe('Test calculator basics with chai', () => {
         expected_result = 12;
         expect(expected_result).to.equal(actual_result)
     });
+    it('basic div 12 - 4 == 8', () => {
+        actual_result = calc.min(12, 4)
+        expected_result = 8;
+        expect(expected_result).to.equal(actual_result)
+    });    
+    it('basic div 12 / 4 == 3', () => {
+        actual_result = calc.div(12, 4)
+        expected_result = 3;
+        expect(expected_result).to.equal(actual_result)
+    });
+    it('basic div 12 / 0 will throw error', () => {
+        expect(() => { calc.div(12, 0) }).to.throw('Cannot divide by zero!')
+    });        
 })
 
-// test min - assert 
-// test div - equal
 
-// npm test
